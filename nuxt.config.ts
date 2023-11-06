@@ -11,7 +11,12 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    'vue3-carousel-nuxt',
+    '@vueuse/nuxt'
+  ],
   css: ['~/assets/scss/style.scss'],
   components: [
     {
