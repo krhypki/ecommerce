@@ -1,5 +1,6 @@
 <template>
-  <nuxt-link
+  <NuxtLink
+    :to="`/products?category=${category.key}`"
     :class="`
           section-products__category-box section-products__category-box--${category.key} transition-bg after:z-1 relative flex items-center justify-center bg-cover
           bg-center 
@@ -12,7 +13,7 @@
     <h2 class="relative z-10 text-3xl">
       {{ category.name }}
     </h2>
-  </nuxt-link>
+  </NuxtLink>
 </template>
 <script lang="ts" setup>
 import type { Category } from '~/types/api/ProductCategories'

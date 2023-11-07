@@ -2,8 +2,12 @@ import { products } from '~/data/prodcuts'
 import { type Product } from '~/types/api/ProductCategories'
 
 export default defineEventHandler((event) => {
-  const { category, featured } = getQuery(event)
+  const { category, featured, id } = getQuery(event)
   let filteredProducts: Product[] = []
+
+  if (id) {
+    return products.find((product: Product) => product.id === +id)
+  }
 
   if (typeof category === 'undefined' && typeof featured === 'undefined') {
     return products

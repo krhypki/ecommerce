@@ -1,9 +1,9 @@
 <template>
-  <div class="min-h-screen">
+  <div class="flex min-h-screen flex-col">
     <VNavbar />
     <main>
       <slot />
     </main>
-    <VFooter />
+    <VFooter class="mt-auto" />
   </div>
 </template>

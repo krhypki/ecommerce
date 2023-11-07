@@ -10,7 +10,7 @@
         molestiae consequatur nobis eligendi. Sunt nesciunt vero numquam vitae
         magnam doloribus?
       </p>
-      <VButton variant="secondary">See all products</VButton>
+      <VButton variant="outline-light">See all products</VButton>
     </div>
   </VSection>
 </template>
