@@ -8,7 +8,7 @@
       class="max-w-sm"
     />
   </div>
-  <div class="flex-column mb-16 flex flex-wrap gap-4 max-md:justify-center">
+  <div class="flex-column mb-16 flex flex-wrap gap-4 max-lg:justify-center">
     <VButton
       :variant="setButtonVariant('all')"
       @click="setActiveCategory('all')"

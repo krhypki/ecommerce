@@ -2,7 +2,7 @@
   <component
     :is="tag"
     :class="[variantClassList, sizeClassList]"
-    class="rounded border transition-all duration-300 ease-in-out"
+    class="rounded border transition-all duration-300 ease-in-out disabled:bg-slate-500 disabled:text-light"
   >
     <slot />
   </component>

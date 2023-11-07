@@ -1,11 +1,13 @@
 <template>
   <nav ref="nav" class="nav sticky top-0 z-50 bg-light px-4 py-6 shadow">
-    <div class="container flex items-center justify-between">
+    <div class="container flex items-center gap-3">
       <NuxtLink to="/">
         <VLogo />
       </NuxtLink>
-      <VNavLinksWrapper :mobile-menu-open="mobileMenuOpen" />
+      <VNavLinksWrapper :mobile-menu-open="mobileMenuOpen" class="ml-auto" />
+      <VCartButton class="max-md:ml-auto" />
       <VMenuBars
+        class="ml-10"
         v-if="isMobile"
         @toggle-mobile-menu="onMobileMenuToggle"
         :is-active="mobileMenuOpen"
