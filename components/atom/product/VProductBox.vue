@@ -11,7 +11,7 @@
       <p class="mb-4 text-xl font-semibold">
         {{ product.name }}
       </p>
-      <span class="text-lg"> ${{ product.price }} </span>
+      <span v-currency="product.price" class="text-lg"></span>
     </div>
   </NuxtLink>
 </template>

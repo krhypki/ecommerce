@@ -1,6 +1,6 @@
 <template>
   <nav ref="nav" class="nav sticky top-0 z-50 bg-light px-4 py-6 shadow">
-    <div class="container flex items-center gap-3">
+    <VContainer class="flex items-center gap-3">
       <NuxtLink to="/">
         <VLogo />
       </NuxtLink>
@@ -12,13 +12,14 @@
         @toggle-mobile-menu="onMobileMenuToggle"
         :is-active="mobileMenuOpen"
       />
-    </div>
+    </VContainer>
   </nav>
 </template>
 <script lang="ts" setup>
 import { useMq } from '~/composable/useMq'
 
 const { isMobile } = useMq()
+const route = useRoute()
 const nav = ref<HTMLElement>()
 const mobileMenuOpen = ref(false)
 
@@ -33,9 +34,20 @@ const onMobileMenuToggle = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value
 }
 
+const closeMobileMenu = () => {
+  mobileMenuOpen.value = false
+}
+
 watch(isMobile, () => {
   if (!isMobile.value) {
-    mobileMenuOpen.value = false
+    closeMobileMenu()
   }
 })
+
+watch(
+  () => route.fullPath,
+  () => {
+    closeMobileMenu()
+  }
+)
 </script>

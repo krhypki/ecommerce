@@ -6,4 +6,6 @@ export type CartProduct = Product & {
 
 export type Cart = {
   products: CartProduct[]
+  isOpen: boolean
+  totalPrice: number
 }

@@ -130,7 +130,7 @@ export const products: Product[] = [
     name: 'Dumbbels',
     category: 'sport',
     price: 2,
-    stock: 1,
+    stock: 15,
     featured: true,
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem ducimus exercitationem facere ipsam nesciunt quae quaerat unde. Quia, tempore!'
   },
@@ -139,7 +139,7 @@ export const products: Product[] = [
     name: 'Dumbbels',
     category: 'sport',
     price: 2,
-    stock: 1,
+    stock: 15,
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem ducimus exercitationem facere ipsam nesciunt quae quaerat unde. Quia, tempore!'
   },
   {
@@ -147,7 +147,7 @@ export const products: Product[] = [
     name: 'Dumbbels',
     category: 'sport',
     price: 2,
-    stock: 1,
+    stock: 15,
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem ducimus exercitationem facere ipsam nesciunt quae quaerat unde. Quia, tempore!'
   },
   {
@@ -155,7 +155,7 @@ export const products: Product[] = [
     name: 'Dumbbels',
     category: 'sport',
     price: 2,
-    stock: 1,
+    stock: 15,
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem ducimus exercitationem facere ipsam nesciunt quae quaerat unde. Quia, tempore!'
   },
   {
@@ -163,7 +163,7 @@ export const products: Product[] = [
     name: 'Dumbbels',
     category: 'sport',
     price: 2,
-    stock: 1,
+    stock: 15,
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem ducimus exercitationem facere ipsam nesciunt quae quaerat unde. Quia, tempore!'
   }
 ]

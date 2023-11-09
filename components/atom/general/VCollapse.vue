@@ -1,5 +1,5 @@
 <template>
-  <transition
+  <Transition
     name="collapse"
     @enter="enter"
     @leave="leave"
@@ -11,7 +11,7 @@
     <component :is="element!" v-show="modelValue">
       <slot />
     </component>
-  </transition>
+  </Transition>
 </template>
 
 <script lang="ts" setup>

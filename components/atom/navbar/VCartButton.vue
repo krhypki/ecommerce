@@ -1,8 +1,9 @@
 <template>
   <button
-    class="relative"
+    class="cart-btn relative"
     :class="beforeClassList"
     :data-count="store.getTotalCount"
+    @click.stop="toggleCart"
   >
     <VIcon name="cart-shopping" class="text-2xl" />
   </button>
@@ -17,4 +18,8 @@ const beforeClassList = computed(() => {
   }
   return `before:content-[attr(data-count)] before:absolute before:-right-5 before:-top-3 before:rounded-full before:bg-secondary before:w-6 before:h-6 before:font-semibold`
 })
+
+const toggleCart = () => {
+  store.isOpen = !store.isOpen
+}
 </script>

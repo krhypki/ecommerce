@@ -1,6 +1,7 @@
 <template>
   <div class="flex min-h-screen flex-col">
     <VNavbar />
+    <VCart />
     <main>
       <slot />
     </main>
