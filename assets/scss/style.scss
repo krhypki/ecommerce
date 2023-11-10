@@ -1,3 +1,10 @@
+@import 'transition';
+
+:root {
+    --nav-height: var(0px);
+}
+
 body {
     background: theme('colors.light');
+    overflow-x: hidden;
 }
